@@ -1,4 +1,4 @@
--- Use Dictinct with Orderby to remove duplicate rows
+-- Deliverable 1, 1st Table
 SELECT DISTINCT ON (e.emp_no) e.emp_no,
 e.first_name,
 e.last_name,
@@ -34,6 +34,7 @@ FROM unique_titles as ut
 GROUP BY ut.title
 ORDER BY COUNT DESC;
 
+-- Deliverable 2
 SELECT DISTINCT ON (e.emp_no) e.emp_no,
 	e.first_name,
 	e.last_name,
@@ -50,5 +51,3 @@ ON e.emp_no = ti.emp_no
 WHERE (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 AND ti.to_date = ('9999-01-01')
 ORDER BY e.emp_no, e.birth_date DESC;
-
-select * from mentorship_eligibility;
