@@ -17,7 +17,14 @@
 * ##### This [table](https://github.com/walzfran/Pewlett-Hackard-Analysis/blob/main/Data/unique_titles.csv) shows the employee and the current title that they hold, this will help the viewer understand what the emplyee does at the company and how seniored they are. When looking at the employees that are leaving it is valuable to understand what thier role is so that you better understand what roles will need to be replaced with the departure of retiring employees. 
 
 ##### The thrid task in the first deliverable was to create a count of the employees in each title category. The table simply shows a count of the unique employee number that is then grouped by the title they hold. 
-* ##### 
+* ##### For this query we referenced the data from the unique titles in the query we just wrote to make sure that we are only counting employees that are currently employed at Pewlett-Hackard and also eligible for retirement.
+* ##### This [table](https://github.com/walzfran/Pewlett-Hackard-Analysis/blob/main/Data/retiring_titles.csv) shows that there are quite a few leaders leaving the company, it is sorted in descending order from most employees in a certain title category leaving to the fewest. This shows that the company will be losing far more senior level employees than assistants and managers. When thinking about retiring employees, it can be worrisome as those are typically employees that have the most tenure with a company and are in the most senior roles which can be challenging to fill. 
+
+##### The only task in the second deliverable was to create a query that displayed employees that are eligbile for the mentorship program. This program is being put into place to assist green staff by partnering them with more tenured employees so they can absorb trade tools from them which will hopefully lead to the senior roles that will be open filling with current employees being promoted. 
+* ##### When writing the query we wanted a table that would display the employee number, first and last nae, birth date, to date - this will all be the same number because we are only filtering current employees, and finally the employees title. It is important to show the employee title in this table as it will asssit the viewer of the table to pair the employee with thier new mentee. 
+* ##### We only want to show employees that were born in 1965 as they will be tenured employees with the company that are nearing eligibility for retirement. For this we used the WHERE function and gave a date range of 01-01-1965 to 12-31-1965. The data is then displayed in order by descending employee number. 
+* Below is an image of the [table](https://github.com/walzfran/Pewlett-Hackard-Analysis/blob/main/Data/mentorship_eligibility.csv) and the query that was created 
+![Deliverable_2_Suppot](https://github.com/walzfran/Pewlett-Hackard-Analysis/blob/main/Deliverable_2_Support.png)
 
 
 
