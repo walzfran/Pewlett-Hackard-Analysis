@@ -6,7 +6,14 @@
 
 #### Results
 ##### In the first deliverable I was tasked with writing a query that created a table showing employees that are eligible for retirement. In the [table](https://github.com/walzfran/Pewlett-Hackard-Analysis/blob/main/Data/retirement_titles.csv) we display the employee number, first and last name, title, from date and to date. 
-* ##### The first time I ran this query 
+* ##### The first time I ran this query it was successful in displaying all the information but there was an issue - there were duplicates. Below is an image that shows what the first query displayed with both the code written and the table displayed. 
+
+![First_Deliverable_Image](https://github.com/walzfran/Pewlett-Hackard-Analysis/blob/main/First_Deliverable_Image.png
+
+* ##### Once I realized that there were duplicates, this problem had to be solved or it would throw off counts and show inaccurate date for anyone needing to view these tables. This was done by using a SELECT DISTINCT function to only show one line for thier unique employee number. 
+
+##### The next task in the first deliverable was to then take what we just worked on and display only current employees of Pewlett-Hackard. 
+
 
 
 Provide a bulleted list with four major points from the two analysis deliverables. Use images as support where needed.
